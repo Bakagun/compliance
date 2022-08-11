@@ -1,10 +1,10 @@
 {
     "artifact_type": "HOOK",
-    "typeName": "AWSSamples::S3BucketEncrypt::Hook",
+    "typeName": "Sahara::S3BucketEncrypt::Hook",
     "language": "python36",
     "runtime": "python3.6",
-    "entrypoint": "awssamples_s3bucketencrypt_hook.handlers.hook",
-    "testEntrypoint": "awssamples_s3bucketencrypt_hook.handlers.test_entrypoint",
+    "entrypoint": "s3bucketencrypt_hook.handlers.hook",
+    "testEntrypoint": "s3bucketencrypt_hook.handlers.test_entrypoint",
     "settings": {
         "version": false,
         "subparser_name": null,
