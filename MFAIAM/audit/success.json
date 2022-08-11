@@ -1,4 +1,4 @@
-Description: Sample template for the AWSSamples::IamPoliciesRequireMfa::Hook resource type that shoud pass
+Description: An example template for Sahara::IamMfa::Hook resource type that shoud pass
 
 Resources:
   RootRole: 
