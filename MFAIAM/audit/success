@@ -1,0 +1,60 @@
+Description: Sample template for the AWSSamples::IamPoliciesRequireMfa::Hook resource type that shoud pass
+
+Resources:
+  RootRole: 
+    Type: "AWS::IAM::Role"
+    Properties: 
+      AssumeRolePolicyDocument: 
+        Version: "2012-10-17"
+        Statement: 
+          - 
+            Effect: "Allow"
+            Principal: 
+              AWS: 
+                - !Sub "arn:aws:iam::${AWS::AccountId}:root"
+            Action: 
+              - "sts:AssumeRole"
+      Path: "/"
+      Policies:
+        - PolicyName: InlineRootOne
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 'dynamodb:*'
+                Resource: '*'
+                Condition:
+                  Bool:
+                    "aws:MultiFactorAuthPresent": "true"
+        - PolicyName: InlineRootTwo
+          PolicyDocument:
+            Version: "2012-10-17"
+            Statement:
+              - Effect: Allow
+                Action: 'logs:*'
+                Resource: '*'
+                Condition:
+                  Bool:
+                    "aws:MultiFactorAuthPresent": "true"
+
+  MyPolicy:
+    Type: 'AWS::IAM::Policy'
+    Properties:
+      PolicyName: ExternalRoot
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Action: 's3:*'
+            Resource: '*'
+            Condition:
+              Bool:
+                "aws:MultiFactorAuthPresent": "true"
+          - Effect: Allow
+            Action: 'ec2:*'
+            Resource: '*'
+            Condition:
+              Bool:
+                "aws:MultiFactorAuthPresent": "true"
+      Roles:
+        - !Ref RootRole
