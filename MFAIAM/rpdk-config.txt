@@ -1,10 +1,10 @@
 {
     "artifact_type": "HOOK",
-    "typeName": "AWSSamples::IamPoliciesRequireMfa::Hook",
+    "typeName": "Sahara::IamMfa::Hook",
     "language": "python37",
     "runtime": "python3.7",
-    "entrypoint": "awssamples_iampoliciesrequiremfa_hook.handlers.hook",
-    "testEntrypoint": "awssamples_iampoliciesrequiremfa_hook.handlers.test_entrypoint",
+    "entrypoint": "iammfa_hook.handlers.hook",
+    "testEntrypoint": "iammfa_hook.handlers.test_entrypoint",
     "settings": {
         "version": false,
         "subparser_name": null,
