@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: "2010-09-09"
-Description: Sample template for the AWSSamples::IamPoliciesRequireMfa::Hook resource type that shoud fail (no MFA conditions)
+Description: An example of a template for the Sahara::IamMfa::Hook resource type that shoud fail (no MFA conditions)
 
 Resources:
   RootRole: 
