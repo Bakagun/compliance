@@ -1,8 +1,8 @@
 {
     "typeName": "AWSSamples::IamPoliciesRequireMfa::Hook",
-    "description": "Example resource IAM policy MFA condition verification hook",
-        "sourceUrl": "https://github.com/aws-cloudformation/aws-cloudformation-samples/tree/main/hooks/python-hooks/cfn-hook-iam-policy-mfa-required",
-    "documentationUrl": "https://github.com/aws-cloudformation/aws-cloudformation-samples/blob/main/hooks/python-hooks/cfn-hook-iam-policy-mfa-required/README.md",
+    "description": "Enforce IAM policy MFA condition verification hook",
+        "sourceUrl": "https://github.com/aws-cloudformation/",
+    "documentationUrl": "https://github.com/aws-cloudformation/",
     "typeConfiguration": {
         "properties": {},
         "additionalProperties": false
