@@ -1,8 +1,8 @@
 {
-    "typeName": "AWSSamples::S3BucketEncrypt::Hook",
-    "description": "Example resource hook that check Amazon S3 bucket encryption properties",
-    "sourceUrl": "https://github.com/aws-cloudformation/aws-cloudformation-samples/tree/main/hooks/python-hooks/s3-bucket-encryption",
-    "documentationUrl": "https://github.com/aws-cloudformation/aws-cloudformation-samples/blob/main/hooks/python-hooks/s3-bucket-encryption/README.md",
+    "typeName": "Sahara::S3BucketEncrypt::Hook",
+    "description": "Sahara hook that checks Amazon S3 bucket encryption properties",
+    "sourceUrl": "https://github.com/aws-cloudformation/",
+    "documentationUrl": "https://github.com/aws-cloudformation/a",
     "typeConfiguration": {
         "properties": {
             "minBuckets": {
